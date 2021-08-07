@@ -1,41 +1,121 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background: linear-gradient(
         to top, 
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), 
-        url(../images/hero.back.jpg),
+        url(../images/hero-background-mob.jpg),
         var(--dark-background-color);
+    background-size: cover;
     text-align: center;
 
+    &__button {
+        display: inline-block;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        padding: 10px 32px;
+            
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+        cursor: pointer;
+    }
+
     &__title {
-        width: 696px;
-        margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 30px;
+        max-width: 360px;
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.62;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--primary-white-color);
 
     }
 }
-.hero__button{
-    display: inline-block;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    padding: 10px 32px;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    cursor: pointer;
+@media (min-device-pixel-ratio: 2) and (min-width: 280px),
+  (min-resolution: 192dpi) and (min-width: 280px),
+  (min-resolution: 2dppx) and (min-width: 280px) {
+  .hero {
+    background: linear-gradient(
+        to top, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/hero-background-mob@2x.jpg),
+        var(--dark-background-color);
+    background-size: cover;
+  }
 }
+
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background: linear-gradient(
+        to top, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/hero-background-tabl.jpg),
+        var(--dark-background-color);
+    text-align: center;
+    }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(
+        to top, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/hero-background-tabl@2x.jpg),
+        var(--dark-background-color);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background: linear-gradient(
+        to top, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/hero-background-desk.jpg),
+        var(--dark-background-color);
+        text-align: center;
+    &__title {
+            max-width: 696px;
+            font-size: 44px;
+            line-height: 1.36;
+        }
+    }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background: linear-gradient(
+        to top, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/hero-background-desk@2x.jpg),
+        var(--dark-background-color);
+    background-size: cover;
+  }
+}
+
+
+
