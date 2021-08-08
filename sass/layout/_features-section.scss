@@ -54,7 +54,7 @@
 @media screen and (min-width: 1200px) {
     .features {
         &__item {
-            flex-basis: calc((100% - 60px) / 4);
+            flex-basis: calc((100% - 120px) / 4);
             margin-bottom: 0;
         }
     }
