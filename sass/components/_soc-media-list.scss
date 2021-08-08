@@ -34,7 +34,6 @@
 // Для футера
 
 .soc-media{
-    margin-left: 70px;
 
     &__title{
         margin-bottom: 20px;
@@ -48,5 +47,10 @@
     }
     &__icon--dark{
         fill: var(--primary-white-color);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .soc-media{
+        margin-left: 70px;
     }
 }

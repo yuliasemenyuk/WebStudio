@@ -30,7 +30,8 @@
 }
 
 @media screen and (max-width: 480px) {
-    &:not(:nth-last-child(-n + 2)) {
+
+    .clients-list__item:not(:nth-last-child(-n + 2)) {
         margin-bottom: 30px;
     }
 }

@@ -38,7 +38,7 @@
             flex-wrap: wrap;                
         }
         &__item {
-            flex-basis: calc((100% - 60px) / 2);  
+            flex-basis: calc((100% - 30px) / 2);  
 
             &:not(:nth-last-child(-n + 2)) {
                 margin-bottom: 30px;
@@ -54,7 +54,7 @@
 @media screen and (min-width: 1200px) {
     .features {
         &__item {
-            flex-basis: calc((100% - 120px) / 4);
+            flex-basis: calc((100% - 90px) / 4);
             margin-bottom: 0;
         }
     }
