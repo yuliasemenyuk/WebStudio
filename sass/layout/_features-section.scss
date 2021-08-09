@@ -1,5 +1,6 @@
 .features {
     &__title {
+        text-align: center;
         font-weight: 700;
         line-height: 1.14;
         text-transform: uppercase;
@@ -47,16 +48,21 @@
         &__icon-container{
             margin-top: 0;
         }
+        &__title {
+            text-align: left;
+        }
     }
     
 }
 
 @media screen and (min-width: 1200px) {
-    .features {
-        &__item {
-            flex-basis: calc((100% - 90px) / 4);
-            margin-bottom: 0;
-        }
+    .features__item {
+        flex-basis: calc((100% - 90px) / 4);
+        margin-bottom: 0;
+        
+    }
+    .features__item:not(:nth-last-child(-n+2)) {
+        margin-bottom: 0;
     }
 }
 

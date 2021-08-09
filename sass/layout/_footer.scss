@@ -80,6 +80,9 @@
         display: flex;
         justify-content: space-around;
     }
+    .subscribe-form {
+        margin-top: 0;
+    }
     .subscribe-field {
         display: flex;
         flex-direction: column;
@@ -92,6 +95,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .footer{
+        text-align: left;
+        display: flex;
+    }
     .footer .container{
         display: flex;
         align-items: baseline;
@@ -103,10 +110,16 @@
             margin-top: 9px;
         }
     }
+    .address-container {
+        margin-bottom: 0px;
+        
+    }
     .subscribe-form{
+        align-self: flex-start;
         display: flex;
         align-items: flex-end;
         margin-left: 93px;
+        margin-top: 0;
     }
     .subscribe-input {
         width: 358px;

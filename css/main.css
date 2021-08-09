@@ -75,10 +75,17 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   max-width: 1600px;
   margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .logo {
@@ -188,6 +195,10 @@ body {
 @media screen and (min-width: 1200px) {
   .soc-media {
     margin-left: 70px;
+  }
+  .soc-media__title {
+    font-size: 14px;
+    font-weight: 500;
   }
 }
 
@@ -373,6 +384,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 12px;
   line-height: 1.71;
 }
 
@@ -427,6 +439,9 @@ body {
   .modal-content {
     min-width: 528px;
     min-height: 581px;
+  }
+  .policy {
+    font-size: 14px;
   }
 }
 
@@ -497,6 +512,17 @@ body {
   position: relative;
   padding-top: 48px;
   padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
 }
 
 .mobile-menu__close-btn {
@@ -544,10 +570,6 @@ body {
   color: var(--title-text-color);
 }
 
-.mobile-nav-list__item:last-of-type {
-  margin-bottom: 306px;
-}
-
 .mobile-nav-list__link {
   text-decoration: none;
 }
@@ -560,6 +582,10 @@ body {
   color: var(--accent-color);
 }
 
+.mobile-contacts-list {
+  margin-bottom: 64px;
+}
+
 .mobile-contacts-list__item:first-of-type {
   margin-bottom: 32px;
   font-weight: 500;
@@ -570,7 +596,6 @@ body {
 }
 
 .mobile-contacts-list__item:last-of-type {
-  margin-bottom: 64px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -797,6 +822,7 @@ body {
 }
 
 .features__title {
+  text-align: center;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -853,12 +879,18 @@ body {
   .features__icon-container {
     margin-top: 0;
   }
+  .features__title {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .features__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
+    margin-bottom: 0;
+  }
+  .features__item:not(:nth-last-child(-n+2)) {
     margin-bottom: 0;
   }
 }
@@ -1008,6 +1040,11 @@ body {
 .clients-list__item {
   -ms-flex-preferred-size: calc((100% - 60px) / 2);
       flex-basis: calc((100% - 60px) / 2);
+  margin-bottom: 30px;
+}
+
+.clients-list__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 .clients-list__link {
@@ -1036,12 +1073,6 @@ body {
 
 .clients-list__icon {
   fill: currentColor;
-}
-
-@media screen and (max-width: 480px) {
-  .clients-list__item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1119px) {
@@ -1241,9 +1272,6 @@ body {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
-  .project-list__item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }
   .project-list__description {
     padding: 49px 24px;
   }
@@ -1362,6 +1390,9 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .subscribe-form {
+    margin-top: 0;
+  }
   .subscribe-field {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1379,6 +1410,12 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1393,7 +1430,12 @@ body {
   .address__list, .address__list:last-child {
     margin-top: 9px;
   }
+  .address-container {
+    margin-bottom: 0px;
+  }
   .subscribe-form {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1401,6 +1443,7 @@ body {
         -ms-flex-align: end;
             align-items: flex-end;
     margin-left: 93px;
+    margin-top: 0;
   }
   .subscribe-input {
     width: 358px;
